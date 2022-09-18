@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********CABEÇALHO*******/
+body {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif; 
+} 
+
+.footer{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    background-color: pink;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+
+header{
+    background-color: pink;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+header img{
+    display: flex;
+    float: left;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 1%;
+}
+
+.imglogo{
+    width: 20%;
+}
+
+.logoo{
+    width: 100%;  
+}
+
+.titulo{
+    margin-left: 5%;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    justify-content: flex-start;
+    float: left;
+}
+
+.menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 30%;
+    margin-left: 17%;
+
+}
+.menu a{
+    text-decoration: none;
+}
+
+.opcao{
+    background: rgb(0, 63, 235);
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 1%;
+    padding: 2%;
+    width: 40%;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.opcao:hover{
+	background-color: rgb(19, 22, 202);
+}
+
+/******************************************************************
+                      PAGINA INICIO
+******************************************************************/
+.corpo{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.pagina{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+.apresenta{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 500;
+    justify-content: flex-start;
+    float: left;
+}
+
+.txt1{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.cronograma{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.tabelaMes{
+	margin: 10px auto;
+    text-align: center;
+    background-color:  rgb(0, 63, 235);;
+}
+.tituloTabela{
+	text-align: center;
+	font-size: 1rem;
+    font-weight: bold;
+    background: rgb(0, 63, 235);
+	color: #fff;
+	padding: 5px;
+}
+tr,td,th{
+    padding: 5px;
+}
+tr,td{
+    background-color: white;
+	font-size: 1rem;
+}
+
+/******************************************************************
+                      PAGINA PROXIMOS
+******************************************************************/
+.corpoProx{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.tituloProx{
+    display: flex;
+    flex-direction: row;
+    margin: 4% 4% 0%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: pink;
+}
+
+.resumo1{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 2% 0%;
+}
+
+.imglivro{
+    margin: 2%;
+}
+
+.txtSobre{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    justify-content: center;
+}
+
+.txtMes{
+    font-size: 1.22rem;
+    margin-bottom: 2%;
+    font-weight: 600;
+    color: #2948df;
+}
+
+.txtTitulo{
+    margin-bottom: 1%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.txtResumo{
+   text-align: justify; 
+}
+
+.resumo2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;  
+    margin: 3% 2% 0%; 
+    background-color: snow;
+}
+
+.txtSobre2{
+    display: flex;
+    margin-left: 25%;
+    flex-direction: column;
+}
+
+.wrap {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    margin-top: 20%;
+    min-width: 190px;
+    min-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    background: linear-gradient(90deg, rgb(136 234 255) 0%, rgb(136 234 255) 100%);
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(200px + 12px);
+    min-height: calc(50px + 12px);
+    border: 3px solid #a2fffe;
+    box-shadow: 0 0 30px #a2fffe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+
+  /******************************************************************
+                      PAGINA VÍDEOS
+******************************************************************/
+.corpoVideo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 3%
+}
+
+h2{
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    float: left;
+    color: blue
+}
+
+p{
+    margin-top: 1%;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    justify-content: flex-start;
+    float: left;
+}
+
+.txtvideo{
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    justify-content: flex-start;
+    float: left;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+
+.video1{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.separaVideo{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    background-color:  aliceblue;
+}
+
+.video2{
+    display: flex;
+    padding: 2% 2% 2% 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+                    
